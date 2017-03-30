@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>魔秀时光道demo</title>
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1" />
+  </head>
+  <body>
+    <audio id="bg-music" autoplay="autoplay" loop="true">
+    </audio>
+    <audio id="hei-music"></audio>
+    <div id="wrap">
+      <div class="loading">
+        <img src="./assets/img/loading.png" alt="loading..." class="icon-loading"/>
+        <p>资源加载中...</p>
+      </div>
+      <div id="main">
+        <img id="btn-left" class="btn" src="./assets/img/left.png">
+        <img id="btn-right" class="btn" src="./assets/img/right.png">
+        <div id="page-start">
+          <img src="./assets/img/btn-start.png" data-type="start" id="btn-start">
+        </div>
+        <div id="page-end">
+          <img src="./assets/img/end-title.png" class="title">
+          <div class="content">
+            <p>Dear <span class="user-name"></span>:</p>
+            <p>感谢你在魔秀的付出，祝愿你在2017幸福健康!</p>
+            <p class="result">
+              <img src="./assets/img/cookie-icon.png"  class="cookie">
+              <span id="cookie">x0</span>
+              <img src="./assets/img/cake-icon.png"  class="ice-cream">
+              <span id="cake">x0</span>
+              <img src="./assets/img/down-icon.png"  class="down-icon">
+              <span id="down">x0</span>
+              <img src="./assets/img/theme-icon.png"  class="theme-icon">
+              <span id="theme">x0</span>
+            </p>
+          </div>
+          <div class="btn-bottom">
+            <img src="./assets/img/btn-restart.png" data-type="restart" class="btn-restart">
+            <img src="./assets/img/btn-close.png" class="btn-close">
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="../lib/pixi.min.js"></script>
+  </body>
+</html>
